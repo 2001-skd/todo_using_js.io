@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TODO Application using HTML, CSS and Javascript</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h4 class="heading">Todo App</h4>
+        <div class="todo_input">
+          <input type="text" placeholder="Add Task" class="input_value" />
+          <button class="add_button" id="add_button">Add</button>
+        </div>
+        <!-- todo cards starts -->
+        <div class="todo_list"></div>
+        <!-- todo cards ends -->
+
+        <!-- filter button starts -->
+        <div class="filter_button">
+          <button class="active">Active Tasks</button>
+          <button class="not_completed">Not Completed Tasks</button>
+        </div>
+        <!-- filter button ends -->
+      </div>
+    </section>
+    <!-- script starts -->
+    <script src="./script.js"></script>
+    <!-- script ends -->
+  </body>
+</html>

@@ -1,0 +1,80 @@
+/* default css starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* default css ends */
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: chocolate;
+}
+
+.container {
+  background-color: red;
+  min-width: 600px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.todo_input input {
+  width: 100%;
+}
+
+.todo_input input,
+.todo_input .add_button,
+.todo_list ul li button,
+.filter_button button {
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.todo_input .add_button,
+.todo_list ul li button,
+.filter_button button {
+  cursor: pointer;
+}
+
+.todo_list {
+  background-color: white;
+  margin: 20px 0 20px 0;
+  padding: 10px;
+}
+
+.todo_list ul li {
+  /* background-color: cadetblue; */
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 400px) {
+  .container {
+    min-width: 350px;
+  }
+}
